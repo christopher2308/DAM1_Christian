@@ -1,11 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Búsqueda de Cámaras</title>
 </head>
+
 <body>
+
+    <h1>Buscar Cámaras de Fotos</h1>
+    <p>Rellena estos simples filtros para conseguir la camara que se adapte a ti.</p>
+
+    <form>
+
+
+        <label for="marca">Marca:</label><br>
+        <select id="marca" name="marca">
+            <option value="" selected>Selecciona una marca</option>
+            <option value="Canon">Canon</option>
+            <option value="Nikon">Nikon</option>
+            <option value="Sony">Sony</option>
+            <option value="Fujifilm">Fujifilm</option>
+            <option value="Olympus">Olympus</option>
+        </select><br><br>
+
+        <!-- Tipo de cámara -->
+        <label for="tipo">Tipo de cámara:</label><br>
+        <select id="tipo" name="tipo">
+            <option value="" selected>Selecciona el tipo</option>
+            <option value="DSLR">DSLR</option>
+            <option value="Mirrorless">Mirrorless</option>
+            <option value="Compacta">Compacta</option>
+            <option value="Instantánea">Instantánea</option>
+        </select><br><br>
+
+
+        <label for="resolucion">Resolución:</label><br>
+        <select id="resolucion" name="resolucion" required>
+            <option value="" selected>Selecciona la resolución</option>
+            <option value="12">12 MP</option>
+            <option value="24">24 MP</option>
+            <option value="48">48 MP</option>
+        </select><br><br>
+
+        
+        <label for="precio">Precio máximo (€):</label><br>
+        <input type="number" id="precio" name="precio" min="100" placeholder="Ej: 500"><br><br>      
+
+        
+        <label for="wifi">Conectividad Wi-Fi:</label>
+        <input type="checkbox" id="wifi" name="wifi" value="si"><br><br>
+
     
+        <button type="submit">Buscar</button>
+    </form>
+
 </body>
+
 </html>
