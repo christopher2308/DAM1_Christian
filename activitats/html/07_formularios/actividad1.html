@@ -1,11 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Actividad 1</title>
 </head>
+
 <body>
-    
+
+    <h1>Contacto</h1>
+    <legend>Ponte en Contacto con nosotros</legend>
+    <br>
+
+    <form>
+        <label>
+            Nombre y apellidos
+            <input type="text" name="nombre" placeholder="Tu nombre y Apellidos" required><br>
+        </label>
+        <br>
+        <label>
+            Direccion de Correo:
+            <input type="text" name="email" placeholder="tuemail@ejemplo.com" required><br>
+        </label>
+        <br>
+
+        <label for="asunto">Asunto:</label><br>
+        <input type="text" name="asunto" placeholder="Motivo del mensaje"><br><br>
+
+       
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea><br><br>
+
+        
+        <button type="submit">
+            Enviar
+        </button>
+    </form>
+
 </body>
+
 </html>
