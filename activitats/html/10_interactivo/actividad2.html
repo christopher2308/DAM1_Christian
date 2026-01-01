@@ -10,19 +10,64 @@
 <body>
     <h1>Zapatos de todos los tipos </h1>
 
-    <h3>Vamos a elejir una marca: </h3>
+    <h3>Vamos a elegir una marca:</h3>
 
-     
-  <label for="marca">Marca:</label>
-  <input type="text" id="marca" list="marca-zapatos" placeholder="Escribe o selecciona">
+
+    <label for="marca">Marca:</label>
+    <input type="text" id="marca" list="marca-zapatos" placeholder="Escribe o selecciona">
 
     <datalist id="marca-zapatos">
-    <option value="Adidas">
-    <option value="Reebok">
-    <option value="Nike">
-    <option value="Puma">
-    <option value="Skechers">
-  </datalist>
+        <option value="Adidas">
+        <option value="Reebok">
+        <option value="Nike">
+        <option value="Puma">
+        <option value="Skechers">
+    </datalist>
+    <br><br>
+
+    <label for="precio">Rango de precios:</label>
+    <select id="precio">
+        <option value="">Selecciona un rango</option>
+        <option value="0-50">0€ - 50€</option>
+        <option value="51-400">51€ - 100€</option>
+        <option value="101-150">101€ - 150€</option>
+        <option value="151-300">151€ - 300€</option>
+        <option value="301-500">301€ - 500€</option>
+        <option value="501+">Más de 500€</option>
+    </select>
+    <br><br>
+    <button id="buscar">Buscar</button>
+
+    <h1>Mobiles de todas las marcas </h1>
+
+    <h3>Vamos a elegir una marca:</h3>
+    <label for="marca-smartphone">Marca:</label>
+    <input type="text" id="marca-smartphone" list="marcas" placeholder="Escribe o selecciona">
+    <datalist id="marcas">
+        <option value="Samsung">
+        <option value="Apple">
+        <option value="Xiaomi">
+        <option value="Huawei">
+        <option value="OnePlus">
+    </datalist>
+
+    <br><br>
+
+    <!-- Rango de precios con select -->
+    <label for="precio">Rango de precios:</label>
+    <select id="precio">
+        <option value="">Selecciona un rango</option>
+        <option value="0-200">0€ - 200€</option>
+        <option value="201-400">201€ - 400€</option>
+        <option value="401-600">401€ - 600€</option>
+        <option value="601-800">601€ - 800€</option>
+        <option value="801-1000">801€ - 1000€</option>
+        <option value="1001+">Más de 1000€</option>
+    </select>
+
+    <br><br>
+
+    <button id="buscar">Buscar</button>
 
 </body>
 
