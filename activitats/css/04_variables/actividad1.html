@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo Completo de Variables CSS</title>
+
+
+  <style>
+    /* 1️⃣ Lo pongo dentro head, debajo de title */
+    :root {
+      
+      --color-principal: #b943d9;
+      --color-secundario: #5e60cb;
+      --color-links: #3A7CA5;    
+      
+      --fuente-titulo: "Arial", sans-serif;
+      --fuente-texto: "Verdana", sans-serif;
+     
+      --gap-peque: 0.5rem;
+      --gap-med: 1rem;
+      --gap-grande: 2rem;
+    }
+
+    /* 2️⃣ Estilos para títulos */
+    h1 {
+      color: var(--color-principal);
+      font-family: var(--fuente-titulo);
+      margin-bottom: var(--gap-grande);
+    }
+
+    /* Título destacado con variable local */
+    h1.destacado {
+      --color-principal: #C02942; /* rojo solo para este h1 */
+      color: var(--color-principal);
+      border-bottom: 2px solid var(--color-principal);
+      padding: var(--gap-peque);
+    }
+
+    /* 3️⃣ Estilos para párrafos */
+    p {
+      color: var(--color-secundario);
+      font-family: var(--fuente-texto);
+      line-height: 1.5;
+      margin-bottom: var(--gap-med);
+    }
+
+    /* 4️⃣ Estilos para enlaces */
+    a {
+      color: var(--color-links);
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: var(--color-principal); /* cambia al color principal al pasar el mouse */
+    }
+  </style>
+</head>
+<body>
+  <!-- Contenido visible -->
+  <h1>Mi página con CSS Variables</h1>
+  <h1 class="destacado">Título destacado</h1>
+  
+  <p>
+    Este es un párrafo normal. <br> Visita mis enlaces: 
+    <a href="https://www.google.com" target="_blank">Google</a>, 
+    <a href="https://www.YouTube.com" target="_blank">YouTube</a>, 
+    <a href="https://www.Wikipedia.com" target="_blank">Wikipedia</a>
+  </p>
+  
+  <p style="--color-secundario:#8B0000;">
+    Este párrafo tiene color diferente usando variable desde HTML.
+  </p>
+</body>
+</html>
