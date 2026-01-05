@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo de especificidad CSS</title>
+
+    <style>
+        /* 1️⃣ SELECTOR DE ETIQUETA (menos específico) */
+        p {
+            color: orange;
+        }
+
+        /* 2️⃣ SELECTOR DE CLASE */
+        .clase-verde {
+            color: green;
+        }
+
+        .clase-roja {
+            color: red;
+        }
+
+        /* 3️⃣ SELECTOR DE ID (más específico) */
+        #id-azul {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Ejemplo de especificidad en CSS</h1>
+
+    <!-- Solo etiqueta -->
+    <p>Este párrafo es naranja (solo etiqueta p).</p>
+
+    <!-- Etiqueta + clase -->
+    <p class="clase-verde">
+        Este párrafo es verde (clase gana a etiqueta).
+    </p>
+
+    <!-- Dos clases (misma especificidad, gana la última en CSS) -->
+    <p class="clase-verde clase-roja">
+        Este párrafo es rojo (empate de clases, gana la última).
+    </p>
+
+    <!-- Etiqueta + clase + id -->
+    <p id="id-azul" class="clase-verde clase-roja">
+        Este párrafo es azul (id gana a todo).
+    </p>
+
+</body>
+</html>
