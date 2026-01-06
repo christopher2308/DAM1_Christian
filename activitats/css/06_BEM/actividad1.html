@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 1</title>
+</head>
+<style>
+    /* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #0ae46c;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Logo */
+.header__logo img {
+  height: 50px;
+}
+
+
+.header__nav .nav__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__item {
+  margin-left: 1rem;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.nav__link:hover {
+  color: #007BFF;
+}
+
+/* Formulario de búsqueda */
+.header__search {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.search__input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search__button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #007BFF;
+  color: rgb(239, 241, 237);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search__button:hover {
+  background-color: #0056b3;
+}
+
+</style>
+<body>
+
+<header class="header">
+
+  <div class="header__logo">
+    <img src="tree.png" alt="Logo del sitio">
+  </div>
+  
+ 
+  <nav class="header__nav">
+    <ul class="nav__list">
+      <li class="nav__item"><a href="#" class="nav__link">Inicio</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">Productos</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <form class="header__search" action="#" method="get">
+    <input type="text" class="search__input" placeholder="Buscar...">
+    <button type="submit" class="search__button">Buscar</button>
+  </form>
+</header>
+
+    
+</body>
+</html>

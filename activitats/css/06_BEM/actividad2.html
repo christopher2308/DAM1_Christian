@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 2</title>
+    <style>
+        .comments {
+            max-width: 600px;
+            margin: 2rem auto;
+            font-family: Arial, sans-serif;
+        }
+
+        .comments__form {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            margin-bottom: 2rem;
+        }
+
+        .comments__input,
+        .comments__textarea {
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .comments__submit {
+            align-self: flex-start;
+            padding: 0.5rem 1rem;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .comments__submit:hover {
+            background-color: #0056b3;
+        }
+
+        .comment {
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+            background-color: #fafafa;
+        }
+
+        .comment__author {
+            font-weight: bold;
+            margin-bottom: 0.25rem;
+        }
+
+        .comment__date {
+            font-size: 0.85rem;
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+
+        .comment__button {
+            background: none;
+            border: none;
+            color: #007bff;
+            cursor: pointer;
+            padding: 0;
+        }
+
+        .comment__button:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="comments">
+
+        <form class="comments__form">
+            <input type="text" class="comments__input" placeholder="Your name">
+            <textarea class="comments__textarea" placeholder="Write your comment"></textarea>
+            <button type="submit" class="comments__submit">Send</button>
+        </form>
+
+        <div class="comment">
+            <p class="comment__author">John Doe</p>
+            <p class="comment__date">2026-01-06</p>
+            <p class="comment__text">This is a simple comment example.</p>
+            <button class="comment__button">Reply</button>
+        </div>
+
+        <div class="comment">
+            <p class="comment__author">Jane Smith</p>
+            <p class="comment__date">2026-01-05</p>
+            <p class="comment__text">I totally agree with this.</p>
+            <button class="comment__button">Reply</button>
+        </div>
+
+    </div>
+</body>
+
+
+
+</html>
