@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Planetas CSS Anidado</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<style>
+/* estilos.css */
+.planeta {
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+
+  /* Marte */
+  &.planeta--marte {
+    background-color: red;
+
+    .planeta__titulo { font-size: 24px; color: rgb(27, 8, 101); }
+    .planeta__descripcion { font-size: 16px; color: rgb(1, 0, 3); }
+
+    &:hover { background-color: darkred; } /* cambia al pasar el ratón */
+  }
+
+  /* Júpiter */
+  &.planeta--jupiter {
+    background-color: orange;
+
+    .planeta__titulo { font-size: 24px; color: white; }
+    .planeta__descripcion { font-size: 16px; color: rgb(198, 9, 24); }
+
+    &:hover { background-color: darkorange; }
+  }
+}
+
+</style>
+<body>
+
+  <article class="planeta planeta--marte">
+    <h2 class="planeta__titulo">Marte</h2>
+    <p class="planeta__descripcion">Marte es el cuarto planeta del sistema solar.</p>
+  </article>
+
+  <article class="planeta planeta--jupiter">
+    <h2 class="planeta__titulo">Júpiter</h2>
+    <p class="planeta__descripcion">Júpiter es el quinto planeta del sistema solar.</p>
+  </article>
+
+</body>
+</html>
