@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Moby Dick - Tipografías</title>
+  <style>
+    
+   @font-face {
+  font-family: "Google Sans";
+  src: url("GoogleSans/Google_Sans-Regular.woff2") format("woff2"),
+       url("GoogleSans/Google_Sans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("JosefinSans/Josefin_Sans-Regular.woff2") format("woff2"),
+       url("JosefinSans/Josefin_Sans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+    
+    body {
+      margin: 2rem;
+      background-color: #f5f5f5;
+    }
+
+
+    .titulo {
+      font-family: "Google Sans", sans-serif;
+      font-size: 3rem;
+      font-weight: bold;
+      letter-spacing: 0.3rem;
+      color: black;
+      transition: all 0.3s;
+    }
+
+    .titulo:hover {
+      font-style: italic;
+      color: blue;
+      cursor: pointer;
+    }
+
+    
+    .autor {
+      font-family: "Google Sans", sans-serif;
+      font-size: 1.5rem;
+      font-weight: 500;
+      letter-spacing: 0.15rem;
+      transition: all 0.3s;
+    }
+
+    .autor:hover {
+      font-style: italic;
+      color: blue;
+      font-size: 1.7rem;
+      cursor: pointer;
+    }
+
+   
+    .capitulo {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 1.8rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: red;
+    }
+
+    .texto {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+      text-align: justify;
+      line-height: 1.6;
+      margin-top: 1rem;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1 class="titulo">Moby Dick</h1>
+  <h2 class="autor">Herman Melville</h2>
+  <h3 class="capitulo">Prólogo</h3>
+
+  <p class="texto">
+    Vivimos tiempos en que los hombres pueden arponear impunemente a las ballenas. A despecho de todos los ecologistas del mundo, las localizan por medio del radar, consiguen incluso algunas veces la complicidad de un hidroavión y luego, para dar muerte al enorme mamífero que emerge a lo lejos, tienen suficiente ya con apretar el gatillo desde la cubierta del barco homicida. Ni siquiera les tiembla el pulso.
+  </p>
+
+  <p class="texto">
+    Hubo otras épocas, sin embargo, en las que no lo tuvieron tan fácil. Los marineros embarcaban entonces en incómodos veleros, arriaban precipitadamente los botes, remaban sin descanso hacia donde estaba la ballena y, cuando la tenían a tiro, lanzaban los crueles arpones y confiaban en su buena suerte.
+  </p>
+
+</body>
+</html>
