@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 1</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+        }
+
+
+        .chat {
+            max-width: 500px;
+            margin: 2rem auto;
+            background: white;
+            padding: 1rem;
+            border-radius: 10px;
+
+        }
+
+        .chat-list {
+            list-style: none;
+        }
+
+        .message {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .message.me {
+            flex-direction: row-reverse;
+        }
+
+        .avatar {
+            width: 50px;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: 20%;
+        }
+
+        .content {
+            background: #eaeaea;
+            padding: 0.75rem 1rem;
+            border-radius: 10px;
+            max-width: 70%;
+        }
+
+        .message.me .content {
+            background: #cce5ff;
+        }
+
+        .date{
+            justify-content:right;
+            color: rgb(26, 6, 141);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1em;
+            margin-bottom: 0.8rem;
+            color: #555;
+        }
+
+        .text {
+            font-size: 0.95rem;
+        }
+
+        .name1 {
+            font-weight: bold;
+            color: #e70b0b;
+        }
+         .name2 {
+            font-weight: bold;
+            color: #024a27;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="chat">
+        <ul class="chat-list">
+
+            <li class="message">
+                <img src="avatar1.jpg" alt="Avatar Ana" class="avatar">
+                <div class="content">
+                    <header>
+                        <strong class="name1">Ana</strong>
+                        <time class="date">10:30</time>
+                    </header>
+                    <p class="text">Hola, ¿cómo estás?</p>
+                </div>
+            </li>
+
+            <li class="message me">
+                <img src="avatar2.jpg" alt="Avatar Luis" class="avatar">
+                <div class="content">
+                    <header>
+                        <strong class="name2">Luis</strong>
+                        <time class="date">10:31</time>
+                    </header>
+                    <p class="text">¡Muy bien! ¿Y tú?</p>
+                </div>
+            </li>
+            <li class="message">
+                <img src="avatar1.jpg" alt="Avatar Ana" class="avatar">
+                <div class="content">
+                    <header>
+                        <strong class="name1">Ana</strong>
+                        <time class="date">10:35</time>
+                    </header>
+                    <p class="text">Pues la Verdad, con algo de estres</p>
+                </div>
+            </li>
+            <li class="message me">
+                <img src="avatar2.jpg" alt="Avatar Luis" class="avatar">
+                <div class="content">
+                    <header>
+                        <strong class="name2">Luis</strong>
+                        <time class="date">10:39</time>
+                    </header>
+                    <p class="text">Oye y eso? Que ha pasado</p>
+                </div>
+
+            </li>
+
+        </ul>
+    </main>
+</body>
+
+</html>
