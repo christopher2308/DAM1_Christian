@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        .aqui {
+            min-height: 100vh;
+            width: 100%;
+            background-image:
+                linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url("paginaweb.png");
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .ajustar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .aqui h1 {
+            color: white;
+            font-size: 3rem;
+        }
+
+        .aqui p {
+            color: #ddd;
+            font-size: 1.2rem;
+        }
+
+        .boton {
+            background-color: #ce5540;
+            padding: 12px 24px;
+            border: 2px solid #030303;
+            border-radius: 25px;
+            font-size: 16px;
+            font-family: Georgia;
+            cursor: pointer;
+            text-decoration: none;
+            color: white;
+        }
+
+        .seccion-roja {
+            background-color: rgb(9, 48, 176);
+            width: 100%;
+            padding: 80px 20px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .seccion-roja h2 {
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .seccion-roja p {
+            color: white;
+            font-size: 1.2rem;
+            max-width: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="aqui">
+        <div class="ajustar">
+            <h1>Your Favorite Source of Free Bootstrap Themes</h1>
+            <p>Start Bootstrap can help you build better websites</p>
+            <a href="registro.html" class="boton">Find out more</a>
+        </div>
+    </div>
+    <div class="seccion-roja">
+        <h2>Tenemos todo lo que necesitas</h2>
+        <p>Este es el texto descriptivo centrado debajo del título.</p>
+    </div>
+
+</body>
+
+</html>
