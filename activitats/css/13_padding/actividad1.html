@@ -12,25 +12,26 @@
         }
 
         .caja {
-            padding: 2rem;
-            max-width: 500px;
-            border-radius: 10px;
-            margin: 2rem 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem;
+            max-width: 900px;
+            margin: 1rem auto;
+            min-height: 80vh;            
+        }
+
+        .texto {
+            max-width: 50%;
         }
 
         .caja h1 {
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 2.5rem;
+            font-size: 2rem;
             margin-bottom: 2rem;
         }
 
-        .caja h3 {
-            font-family: Georgia, "Times New Roman", serif;
-            font-size: 1.1rem;
-            font-weight: normal;
-            margin-bottom: 1.5rem;
-            display: flex;
-        }
+
 
         span {
             font-weight: bold;
@@ -38,7 +39,7 @@
         }
 
         .linea {
-            margin-top: 25rem;
+            margin-top: 10rem;
             padding: 1rem 1.5rem;
             background-color: rgba(0, 200, 200, 0.2);
             border-radius: 8px;
@@ -57,12 +58,7 @@
             cursor: pointer;
         }
 
-        .imagen {
-            max-width: 40%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+
 
         .imagen img {
             width: 100%;
@@ -71,26 +67,26 @@
             border-radius: 40% 60% 55% 45%;
             background-color: #ffd24d;
             padding: 1rem;
-            box-shadow: 0 0 20px rgba(255, 210, 77, 0.5);
         }
     </style>
 </head>
 
 <body>
     <div class="caja">
-        <h1>Ponte manos a la obra y aumenta tus ventas</h1>
-        <h3>Consigue que tus clientes interactuen y haz crecer tu negocio con la plataforma de markting avanzada pero
-            facil de usar Mailchimp</h3>
-            <div class="imagen">
-            <img src="mailchip.jpg" alt="Nuesta Pagina">
-        </div>            
-        <button class="boton">Suscríbete</button>
-        
+        <div class="texto">
+            <h1>Ponte manos a la obra y aumenta tus ventas</h1>
+            <h3>Consigue que tus clientes interactuen y haz crecer tu negocio con la plataforma de markting avanzada
+                pero facil de usar Mailchimp</h3>
+            <button class="boton">Suscríbete</button>
+        </div>
 
+        <div class="imagen">
+            <img src="mailchip.jpg" alt="Nuesta Pagina">
+        </div>
     </div>
+
     <p class="linea">Mailchimp ha sido adquirida por <span>Intuti</span> Nuestro cofundador y CEO compartio las noticias
-        con nuestri
-        cliente leala <a href="">aqui</a> en ingles</p>
+        con nuestro cliente leala <a href="">aqui</a> en ingles</p>
 </body>
 
 </html>
