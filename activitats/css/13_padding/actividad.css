@@ -1,0 +1,22 @@
+button {
+    color: darkblue; 
+    background-color: lightblue;
+    border-radius: 8px;
+    cursor: pointer;
+    
+}
+button:hover {
+    color: brown;
+    background-color: darkgreen;
+}
+
+table, th, td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  background-color: lightcyan;
+}
+
+span {
+    font-size: 32px;
+  font-weight: 900;
+}
