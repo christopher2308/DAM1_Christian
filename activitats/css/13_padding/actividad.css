@@ -1,22 +1,48 @@
-button {
-    color: darkblue; 
-    background-color: lightblue;
-    border-radius: 8px;
-    cursor: pointer;
-    
-}
-button:hover {
-    color: brown;
-    background-color: darkgreen;
+* {
+
+  font-family: cursive;
 }
 
-table, th, td {
-  border: 2px solid black;
+table {
+  width: 100%;
   border-collapse: collapse;
+  text-align: center;
+}
+
+tr:first-child th {
+  border-top: 2px solid black;
+}
+
+tr:last-child td {
+  border-bottom: 2px solid black;
+}
+
+th, td {
+  padding: 1.5rem;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-top: none;
+  border-bottom: none;
+  vertical-align: top;
   background-color: lightcyan;
 }
 
+button {
+  color: darkblue;
+  font-size: 1.1rem;   
+  background-color: lightblue;
+  border-radius: 8px;
+  cursor: pointer;
+
+}
+
+button:hover {
+  color: brown;
+  background-color: darkgreen;
+}
+
+
 span {
-    font-size: 32px;
+  font-size: 32px;
   font-weight: 900;
 }
