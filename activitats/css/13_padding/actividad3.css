@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.acordeon {
+  width: 600px;
+  margin: 2rem auto;
+}
+
+.item {
+  border: 1.5px solid #0a0f8b;
+  margin-bottom: 1.5rem;
+}
+
+.open {
+  display: none;
+  padding: 1rem;
+}
