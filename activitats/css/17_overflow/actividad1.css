@@ -1,0 +1,6 @@
+div {
+    max-width: 50rem;
+    max-height: 10rem;
+    overflow: hidden;
+    border: 2px solid black;
+}
