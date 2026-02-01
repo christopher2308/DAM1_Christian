@@ -1,0 +1,9 @@
+
+img {
+    width: 200px;
+    transition: filter 0.4s ease; 
+}
+
+img:hover {
+    filter: invert(100%); 
+}
