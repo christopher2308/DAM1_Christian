@@ -1,0 +1,16 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    width: 50%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    margin: 5px;
+}
+ 
+img:hover {
+    filter: grayscale(100%);
+}
