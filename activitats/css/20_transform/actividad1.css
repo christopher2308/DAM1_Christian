@@ -1,0 +1,10 @@
+button {    
+    border: blue solid;
+    border-radius: 1rem;
+}
+
+button:hover{
+    background-color: aqua;
+    transform: rotate(15deg);
+}
+
