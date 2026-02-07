@@ -1,0 +1,32 @@
+#cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-80%);
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+
+@keyframes mostrar {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+
+#cookie-banner {
+  animation: mostrar 1s ease forwards;
+  animation-delay: 3s;
+}
+
+
