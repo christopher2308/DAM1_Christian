@@ -8,3 +8,39 @@ button:hover{
     transform: rotate(15deg);
 }
 
+
+/* Para la Segunda actividad lo probare desde aqui
+*/
+
+body{
+  font-family: Arial, sans-serif;
+  margin: 10px;
+}
+
+body > section:nth-child(1){
+     height: 100vh;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body > section:nth-child(1) > section:nth-child(1)
+{
+  width: 300px;
+  padding: 20px;
+  background: rgb(127, 241, 121);
+  border: 3px solid #333;
+  text-align: center;
+  border-radius: 10px;
+  
+   transition:
+    transform 0.8s ease,
+    border-color 0.8s ease;
+}
+
+body > section:nth-child(1) > section:nth-child(1):hover{
+  transform: scale(2);
+  background: #ffcc00;
+  border-color: red;
+}
+
