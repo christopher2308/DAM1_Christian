@@ -1,0 +1,35 @@
+body>section:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+}
+
+body>section:nth-child(1)>section:nth-child(1) {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(226, 241, 50);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+body>section:nth-child(1)>section:nth-child(2) {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(238, 238, 244, 0.5);
+    border: 1px, solid black;
+    border-radius: 50%;
+    transition: transform 1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body>section:nth-child(1)>section:nth-child(2):hover {
+    transform: translateX(-120px);
+     background-color: lightskyblue;  
+}
