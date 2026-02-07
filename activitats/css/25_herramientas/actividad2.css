@@ -1,0 +1,24 @@
+body > section:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+
+body > section:nth-child(1) > section:nth-child(1) {  
+  animation: rotar 4s linear infinite;
+   font-size: 40px;
+}
+
+@keyframes rotar {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(50deg); /* rota levemente */
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
