@@ -169,3 +169,57 @@ footer .socials a {
     transform: rotate(15deg) scale(1.1);
     border-color: #1abc9c;
 }
+
+/* Aqui pondre todo lo de actividades*/
+
+.contenedor-ejercicios {
+    max-width: 700px;          
+    font-family: Arial, sans-serif;
+}
+
+.ejercicio-item {
+    background-color: #ffffff;
+    margin-bottom: 15px; 
+    border: 1px solid #070707; 
+    border-radius: 8px;      
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.05); 
+    overflow: hidden;          
+}
+
+.ejercicio-item summary {
+    padding: 15px 20px;
+    background-color: #7689e7;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    list-style: none;
+   transition: background-color 0.5s ease; 
+}
+
+.ejercicio-item summary:hover {
+    background-color: #1d8ee4;
+}
+
+.lista-desplegable {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-desplegable li {
+    border-top: 1px solid #eee;
+}
+
+.lista-desplegable a {
+    display: block;
+    padding: 12px 25px;
+    color: #333;
+    text-decoration: none; 
+    transition: all 0.2s;
+}
+
+.lista-desplegable a:hover {
+    background-color: #f1f1f1;
+    color: #086b57;
+    padding-left: 35px;
+}
