@@ -78,6 +78,68 @@ table th {
     color: white;
 }
 
+
+#formacion {
+    padding: 40px 0;
+}
+
+.formacion-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre títulos */
+}
+
+.formacion-item {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Sombra suave */
+    transition: transform 0.3s ease, border-left 0.3s ease;
+    border-left: 5px solid #7689e7; /* Línea de color de tu marca */
+}
+
+.formacion-item:hover {
+    transform: translateX(10px); /* Desplazamiento sutil al pasar el mouse */
+    background: #fcfcff;
+}
+
+.logo-centro {
+    width: 80px;
+    height: 80px;
+    margin-right: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-centro img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Asegura que el logo no se deforme */
+    filter: grayscale(20%); /* Un toque sobrio */
+}
+
+.info-centro h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.2rem;
+    color: #2c3e50;
+}
+
+.institucion {
+    margin: 0;
+    font-weight: bold;
+    color: #7689e7;
+}
+
+.fecha {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+
 /* Aqui voy a poner lo de los Bocetos 
 /* Contenedor principal */
 .seccion-wireframes {
@@ -143,7 +205,7 @@ table th {
     text-decoration: none;
     border-radius: 5px;
     font-size: 0.85rem;
-    transition: background 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 .btn-download:hover {
@@ -183,6 +245,8 @@ button {
 button:hover {
     background: #16a085;
 }
+
+
 
 /* Pie de página */
 footer {
