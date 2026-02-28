@@ -39,8 +39,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #1abc9c;
-    
+    color: #1abc9c;    
 }
 
 /* Secciones Principales */
@@ -58,7 +57,174 @@ section {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo de la Tabla (Página Sobre mí) */
+/*=====PARTE DE LA EL INICIO===*/
+.hero-section {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1100px;
+    background: rgba(255, 255, 255, 0.05); /* Cristal suave */
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    padding: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* Animación sutil de entrada */
+.hero-text {
+    animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.badge {
+    background: #7689e7;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: #2c3e50;
+    margin: 15px 0;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    color: #5a6ecf;
+    font-weight: 500;
+}
+
+/* Estilo para la foto con pulso de confianza */
+.image-wrapper {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid white;
+    box-shadow: 0 0 20px rgba(118, 137, 231, 0.3);
+    
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 10%;
+}
+
+
+/* Estilos base para ambos botones */
+.btn-primary, .btn-secondary {
+    display: inline-block;
+    padding: 12px 30px;
+    margin: 10px 5px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Botón Principal (Actividades) - Color sólido */
+.btn-primary {
+    background-color: #7689e7; 
+    color: white;
+    border: 2px solid #7689e7;
+    box-shadow: 0 4px 15px rgba(118, 137, 231, 0.3);
+}
+
+/* Botón Secundario (Contactar) - Elegante con borde */
+.btn-secondary {
+    background-color: transparent;
+    color: #7689e7;
+    border: 2px solid #7689e7;
+}
+
+/* --- ANIMACIÓN AL PASAR EL CURSOR (HOVER) --- */
+
+.btn-primary:hover, .btn-secondary:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 20px rgba(118, 137, 231, 0.4);
+}
+
+.btn-primary:hover {
+    background-color: #5a6ecf;
+    border-color: #5a6ecf;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(118, 137, 231, 0.1);
+}
+
+/* Efecto al hacer clic (Presionar) */
+.btn-primary:active, .btn-secondary:active {
+    transform: scale(0.95); 
+}
+
+/* Aqui estara la parte de Mis areas de enfoque*/
+/* Contenedor de la cuadrícula */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+
+/* Estilo de la Tarjeta de Enfoque */
+.card-enfoque {
+    background: white;
+    padding: 30px;
+    border-radius: 20px; /* Bordes redondeados como el resto */
+    border: 1px solid rgba(0,0,0,0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.card-enfoque:hover {
+    transform: translateY(-10px); /* El mismo efecto de "salto" sutil */
+    box-shadow: 0 15px 35px rgba(118, 137, 231, 0.15);
+    border-color: #7689e7; /* Borde lila al pasar el cursor */
+}
+
+/* Estilo de los Iconos */
+.icon-box {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.card-enfoque h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.card-enfoque p {
+    color: #7f8c8d;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* ====Estilo de la Tabla (Página Sobre mí) =====*/
 
 
 .formacion-container {
@@ -79,7 +245,7 @@ section {
 }
 
 .formacion-item:hover {
-    transform: translateX(10px); /* Desplazamiento sutil al pasar el mouse */
+    transform: translateX(10px);
     background: #fcfcff;
 }
 
@@ -118,7 +284,7 @@ section {
 }
 
 
-/* Aqui voy a poner lo de los Bocetos 
+/* Aqui voy a poner lo de los Bocetos las imagenes que hice
 /* Contenedor principal */
 .seccion-wireframes {
     padding: 40px 20px;
@@ -189,6 +355,8 @@ section {
 .btn-download:hover {
     background-color: #5a6ecf;
 }
+
+
 
 /* Estilo del Formulario (Página Contacto) */
 form {
