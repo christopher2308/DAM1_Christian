@@ -38,9 +38,11 @@ nav ul li a {
     transition: color 0.3s;
 }
 
+
 nav ul li a:hover {
     color: #1abc9c;    
 }
+
 
 /* Secciones Principales */
 main {
@@ -83,6 +85,7 @@ section {
 .hero-text {
     animation: fadeInUp 1s ease-out;
 }
+
 
 @keyframes fadeInUp {
     from { opacity: 0; transform: translateY(30px); }
@@ -159,6 +162,7 @@ h1 {
     border: 2px solid #7689e7;
 }
 
+/*
 /* --- ANIMACIÓN AL PASAR EL CURSOR (HOVER) --- */
 
 .btn-primary:hover, .btn-secondary:hover {
@@ -178,7 +182,7 @@ h1 {
 /* Efecto al hacer clic (Presionar) */
 .btn-primary:active, .btn-secondary:active {
     transform: scale(0.95); 
-}
+}*/
 
 /* Aqui estara la parte de Mis areas de enfoque*/
 /* Contenedor de la cuadrícula */
@@ -504,4 +508,33 @@ footer .socials a {
     background-color: #f1f1f1;
     color: #086b57;
     padding-left: 35px;
+}
+
+/* Aqui lo de contacto  botón de enviar */
+.btn-enviar, 
+button[type="submit"] {
+    background-color: #7689e7; 
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(118, 137, 231, 0.3);
+    width: 100%;
+}
+
+
+.btn-enviar:hover,
+button[type="submit"]:hover {
+    background-color: #5a6ecf;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(118, 137, 231, 0.4);
+}
+
+
+.btn-enviar:active,
+button[type="submit"]:active {
+    transform: scale(0.98);
 }
