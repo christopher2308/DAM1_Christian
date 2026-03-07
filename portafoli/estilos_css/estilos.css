@@ -73,7 +73,7 @@ section {
     align-items: center;
     gap: 50px;
     max-width: 1100px;
-    background: rgba(255, 255, 255, 0.05); /* Cristal suave */
+    background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
     border-radius: 30px;
     padding: 50px;
@@ -114,7 +114,7 @@ h1 {
     font-weight: 500;
 }
 
-/* Estilo para la foto con pulso de confianza */
+/* Estilo para la foto que se vea genial !trato¡*/
 .image-wrapper {
     position: relative;
     width: 300px;
@@ -135,6 +135,7 @@ h1 {
 
 
 /* Estilos base para ambos botones */
+
 .btn-primary, .btn-secondary {
     display: inline-block;
     padding: 12px 30px;
@@ -162,7 +163,7 @@ h1 {
     border: 2px solid #7689e7;
 }
 
-/*
+
 /* --- ANIMACIÓN AL PASAR EL CURSOR (HOVER) --- */
 
 .btn-primary:hover, .btn-secondary:hover {
@@ -182,7 +183,7 @@ h1 {
 /* Efecto al hacer clic (Presionar) */
 .btn-primary:active, .btn-secondary:active {
     transform: scale(0.95); 
-}*/
+}
 
 /* Aqui estara la parte de Mis areas de enfoque*/
 /* Contenedor de la cuadrícula */
@@ -197,17 +198,17 @@ h1 {
 .card-enfoque {
     background: white;
     padding: 30px;
-    border-radius: 20px; /* Bordes redondeados como el resto */
+    border-radius: 20px;
     border: 1px solid rgba(0,0,0,0.05);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* Sombra suave */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
 }
 
 .card-enfoque:hover {
-    transform: translateY(-10px); /* El mismo efecto de "salto" sutil */
+    transform: translateY(-10px);
     box-shadow: 0 15px 35px rgba(118, 137, 231, 0.15);
-    border-color: #7689e7; /* Borde lila al pasar el cursor */
+    border-color: #7689e7;
 }
 
 /* Estilo de los Iconos */
@@ -407,18 +408,7 @@ footer {
     margin-top: 2rem;
 }
 
-/* Imagen de perfil */
-.profile-img img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid #086b57;
-    display: block;
-    margin: 20px auto;
-    object-fit: cover;
-    object-position: center 20%;
-}
+
 footer .socials a {
     color: #ffffff;
     text-decoration: none;
@@ -537,4 +527,42 @@ button[type="submit"]:hover {
 .btn-enviar:active,
 button[type="submit"]:active {
     transform: scale(0.98);
+}
+
+/*===== ESTO ES UNA PRUEBA ================= */
+
+@media (max-width: 768px) {
+    
+    .hero-content {
+        flex-direction: column-reverse; 
+        padding: 30px 20px;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-text .subtitle {
+        font-size: 1.1rem;
+    }
+
+    .image-wrapper {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .btn-primary, .btn-secondary {
+        width: 100%;
+        max-width: 250px;
+    }
 }
