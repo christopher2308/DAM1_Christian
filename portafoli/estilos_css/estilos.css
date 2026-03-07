@@ -6,7 +6,7 @@ body {
     padding: 0;
     color: #333;
     background-color: #f4f7f6;
-   
+
 }
 
 /* Navegación (Header) */
@@ -40,7 +40,7 @@ nav ul li a {
 
 
 nav ul li a:hover {
-    color: #1abc9c;    
+    color: #1abc9c;
 }
 
 
@@ -78,7 +78,7 @@ section {
     border-radius: 30px;
     padding: 50px;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
 /* Animación sutil de entrada */
@@ -88,8 +88,15 @@ section {
 
 
 @keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .badge {
@@ -123,7 +130,7 @@ h1 {
     overflow: hidden;
     border: 5px solid white;
     box-shadow: 0 0 20px rgba(118, 137, 231, 0.3);
-    
+
 }
 
 .image-wrapper img {
@@ -136,7 +143,8 @@ h1 {
 
 /* Estilos base para ambos botones */
 
-.btn-primary, .btn-secondary {
+.btn-primary,
+.btn-secondary {
     display: inline-block;
     padding: 12px 30px;
     margin: 10px 5px;
@@ -150,7 +158,7 @@ h1 {
 
 /* Botón Principal (Actividades) - Color sólido */
 .btn-primary {
-    background-color: #7689e7; 
+    background-color: #7689e7;
     color: white;
     border: 2px solid #7689e7;
     box-shadow: 0 4px 15px rgba(118, 137, 231, 0.3);
@@ -166,7 +174,8 @@ h1 {
 
 /* --- ANIMACIÓN AL PASAR EL CURSOR (HOVER) --- */
 
-.btn-primary:hover, .btn-secondary:hover {
+.btn-primary:hover,
+.btn-secondary:hover {
     transform: scale(1.08);
     box-shadow: 0 6px 20px rgba(118, 137, 231, 0.4);
 }
@@ -181,8 +190,9 @@ h1 {
 }
 
 /* Efecto al hacer clic (Presionar) */
-.btn-primary:active, .btn-secondary:active {
-    transform: scale(0.95); 
+.btn-primary:active,
+.btn-secondary:active {
+    transform: scale(0.95);
 }
 
 /* Aqui estara la parte de Mis areas de enfoque*/
@@ -199,7 +209,7 @@ h1 {
     background: white;
     padding: 30px;
     border-radius: 20px;
-    border: 1px solid rgba(0,0,0,0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
@@ -235,7 +245,7 @@ h1 {
 .formacion-container {
     display: flex;
     flex-direction: column;
-    gap: 20px; 
+    gap: 20px;
 }
 
 .formacion-item {
@@ -243,8 +253,8 @@ h1 {
     align-items: center;
     background: white;
     padding: 20px;
-    border-radius: 15px; 
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, border-left 0.3s ease;
     border-left: 10px solid #7689e7;
 }
@@ -311,7 +321,7 @@ h1 {
     background: white;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     border: 1px solid #eee;
 }
@@ -380,7 +390,7 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-   
+
 }
 
 button {
@@ -412,7 +422,7 @@ footer {
 footer .socials a {
     color: #ffffff;
     text-decoration: none;
-    transition: color 0.3s; 
+    transition: color 0.3s;
 }
 
 
@@ -433,9 +443,9 @@ footer .socials a {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px; 
+    padding: 20px;
     font-weight: bold;
-    font-size: 0.85rem; 
+    font-size: 0.85rem;
     line-height: 1.2;
     box-sizing: border-box;
 }
@@ -449,17 +459,17 @@ footer .socials a {
 /* Aqui pondre todo lo de actividades*/
 
 .contenedor-ejercicios {
-    max-width: 700px;          
+    max-width: 700px;
     font-family: Arial, sans-serif;
 }
 
 .ejercicio-item {
     background-color: #ffffff;
-    margin-bottom: 15px; 
-    border: 1px solid #070707; 
-    border-radius: 8px;      
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.05); 
-    overflow: hidden;          
+    margin-bottom: 15px;
+    border: 1px solid #070707;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
 }
 
 .ejercicio-item summary {
@@ -469,7 +479,7 @@ footer .socials a {
     font-weight: bold;
     cursor: pointer;
     list-style: none;
-   transition: background-color 0.5s ease; 
+    transition: background-color 0.5s ease;
 }
 
 .ejercicio-item summary:hover {
@@ -490,7 +500,7 @@ footer .socials a {
     display: block;
     padding: 12px 25px;
     color: #333;
-    text-decoration: none; 
+    text-decoration: none;
     transition: all 0.2s;
 }
 
@@ -501,9 +511,9 @@ footer .socials a {
 }
 
 /* Aqui lo de contacto  botón de enviar */
-.btn-enviar, 
+.btn-enviar,
 button[type="submit"] {
-    background-color: #7689e7; 
+    background-color: #7689e7;
     color: white;
     padding: 12px 30px;
     border: none;
@@ -532,9 +542,9 @@ button[type="submit"]:active {
 /*===== ESTO ES UNA PRUEBA ================= */
 
 @media (max-width: 768px) {
-    
+
     .hero-content {
-        flex-direction: column-reverse; 
+        flex-direction: column-reverse;
         padding: 30px 20px;
         gap: 20px;
         text-align: center;
@@ -561,7 +571,8 @@ button[type="submit"]:active {
         align-items: center;
     }
 
-    .btn-primary, .btn-secondary {
+    .btn-primary,
+    .btn-secondary {
         width: 100%;
         max-width: 250px;
     }
